@@ -1,4 +1,31 @@
+    *{
+        font-family: 'Poppins', sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
 .intro {
-    background-image:url("assets/") ;
-      
+    background-image:url("../assets/backgrounds/h_img.jpg") ;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    padding-top: 30px ;
 }
+#logo{
+    margin-top: 200px;
+    margin-bottom: 45px;
+    height: 60px;
+}
+#mouse.click{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.intro p{
+    margin-bottom: 140px;   
+}
+.intro h1{
+    margin-bottom: 20px;
+}
+

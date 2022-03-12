@@ -4,6 +4,7 @@
 //     $("hidden").show()
 //     $()
 // });
+
 $(document).ready(function(){
 var contactForm= $("contactform")
 $(function(){
@@ -32,3 +33,8 @@ $("#product-management").click(function(){
     $(".product-management-showing").toggle();
 
 }):
+// validate contact form
+function validateContactForm(){
+    let isFormValid = true;
+    const formInputs = contactForm.find("input,textarea")
+}

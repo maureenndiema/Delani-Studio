@@ -10,6 +10,9 @@
     text-align: center;
     background-size: cover;
     padding-top: 30px ;
+    background-attachment: fixed;
+    margin: auto;
+    height: 97vh;
     
 }
 #logo{

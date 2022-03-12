@@ -74,4 +74,4 @@ function clearForm() {
     contactForm.find("input,textarea").each(function) {
         $(this).value("");
     }
-}
+});

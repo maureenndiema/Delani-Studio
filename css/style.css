@@ -218,3 +218,9 @@
         font-size: 16px;
         padding: 16px 32px;
     }
+    .container h2{
+        text-align: center;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+
+    }

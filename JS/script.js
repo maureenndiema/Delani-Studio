@@ -48,6 +48,8 @@ $(document).ready(function () {
 
     });
 });
+
+$(".overlay")
 // validate contact form
 function validateContactForm() {
     let isFormValid = true;
@@ -71,7 +73,14 @@ function removeFormErrors() {
 }
 
 function clearForm() {
-    contactForm.find("input,textarea").each(function) {
+    contactForm.find("input,textarea").each(function() {
         $(this).value("");
     }
-});
+}
+
+$(".overlay").hover(function(){
+    $(this).animate({opacity:'1'});
+},
+function(){
+    $(this).animate({opacity:'0'})
+})

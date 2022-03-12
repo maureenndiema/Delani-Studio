@@ -10,6 +10,7 @@
     text-align: center;
     background-size: cover;
     padding-top: 30px ;
+    
 }
 #logo{
     margin-top: 200px;
@@ -44,11 +45,43 @@
     text-align: center;
 }
 .services{
-    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-image: url("../assets/backgrounds/s_image.jpg");
     /* margin: 15px;
     padding: 15px; */
 }
 #servicesoverlay{
     padding: 50px;
     margin: 50px;
+}
+
+.contact{
+    background-image: url("../assets/backgrounds/c_image.jpg");
+    background-size: cover;
+}
+.form-control{
+    background-color:  rgba(0,0,0,0);
+}
+#name::placeholder{
+    color: white;
+}
+#email::placeholder{
+    color: white;
+}
+#message::placeholder{
+    color: white;
+}
+.submit{
+    color: white;
+    background-color: rgba(0,0,0,0);
+    margin-top: 10px;
+    
+}
+#contact{
+    text-align: center;
+    color: white;
+}
+.footer{
+    position: static;
+    text-align: center;
+    width: 100%;
 }

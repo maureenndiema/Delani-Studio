@@ -9,10 +9,12 @@
     color: white;
     text-align: center;
     background-size: cover;
-    padding-top: 30px ;
     background-attachment: fixed;
+    padding-top: 30px ;
+    height: 50vw;
     margin: auto;
-    height: 97vh;
+    
+   
     
 }
 #logo{
@@ -22,12 +24,33 @@
 }
 #mouse.click{
     padding-top: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
     margin-top: 30px;
+    animation:bounce 1s infinite;
 }
+/* @keyframes bounce{ */
+    /* 0%,60%,100%{
+        transform:translateY(0);
+    }
+    60%{
+        transform:translateY(-3.5vw);   
+    }
+    100%{
+        transform:translateY(-5.5vw); 
+
+    }
+} */
+@keyframes bounce {
+    0%, 100% {
+          transform: translateY(0);
+     }
+    100% {
+          transform: translateY(-3.5vw);
+    }
+ }
 .intro p{
-    margin-bottom: 140px;   
+    margin-bottom: 5vw;   
 }
 .intro h1{
     margin-bottom: 20px;
@@ -43,7 +66,8 @@
 .what-we-do{
     text-align: center;
 }
-.design-showing{
+.design-hidden{
+    text-align: center;
     display: none;
 }
 .development-showing{
@@ -56,6 +80,8 @@
 }
 .services{
     background-image: url("../assets/backgrounds/s_image.jpg");
+    color: white;
+    padding-top: 2vw;
     /* margin: 15px;
     padding: 15px; */
 }
@@ -102,3 +128,28 @@
     margin-right: 0%;
     flex-wrap: wrap;
 }
+.images {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#overlay p{
+    display: none;
+}
+#overlay,#overlay1{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    height: 90%;
+    width: 75%;
+    background-color: grey;
+
+}
+/* #work1,#work2,#work3,#work4,#work5,#work6,#work7,#work8{
+    display: relative;
+} */

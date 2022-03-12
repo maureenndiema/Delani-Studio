@@ -1,86 +1,56 @@
-// $(".visible").click(function(){
-//     $(".visible").hide()
-//     $(".hidden").toggle()
-//     $("hidden").show()
-//     $()
-// });
-
 $(document).ready(function () {
-    // var contactForm= $("contactform")
-    // $(function(){
-    //     contactForm.on("submit", function(){
-    //         e.preventDefault()
-    //         let formValid = validContactForm();
-    //         if (formValid){
-    //             const name = ("input.name").value()
-    //             alert("Thank you ${name}, your message has been received");
-    //             clearForm();
-    //         }
-    //     }
-    // );
-    // });
+    
     $("#design").click(function () {
         $(".design-hidden").fadeToggle();
-        $(".design-showing").fadetoggle();
+        $(".design-showing").fadeToggle();
     });
-    $(".design-showing").click(function () {
-        $(".design-hidden").fadeToggle();
-        $(".design-showing").fadetoggle();
-    });
-
+    
     $("#development").click(function () {
         $(".development-hidden").fadeToggle();
         $(".development-showing").fadeToggle();
     });
-    $(".development-showing").click(function () {
-        $(".development-hidden").fadeToggle();
-        $(".development-showing").fadeToggle();
-    });
-
+    
     $("#product").click(function () {
         $(".product-hidden").fadeToggle();
         $(".product-showing").fadeToggle();
 
     });
-    $(".product-showing").click(function () {
-        $(".product-hidden").fadeToggle();
-        $(".product-showing").fadeToggle();
-
+ 
     });
-});
+//     $(".overlay").hover(function(){
+//         $(this).animate({opacity:'1'});
+//     },
+//     function(){
+//         $(this).animate({opacity:'0'})
+//     })
+// });
+    $("#work1 img").mouseover(function(){
+        $("#work1 img").hide();
+        $("#overlay1").show();
+    });
+    $("#work1 img").mouseout(function(){
+        $("#work1 img").show();
+        $("#overlay1").hide();
+    });
+    
+    
+ 
 
-$(".overlay")
+
 // validate contact form
-function validateContactForm() {
-    let isFormValid = true;
-    const formInputs = contactForm.find("input,textarea")
-
-    formInputs.each(function () {
-            if ($(this).value()) {
-                $(this).addClass(is - invalid);
-                isFormValid = false;
-            }
+function validate() {
+    
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        if (name == "" || email  == ""|| message  ==""){
+          alert("Please enter your name, email and message!");
+           return false;
+    
         }
-        return isFormValid;
-    });
+        else{
+          alert (name + ",hello,thank you for contacting us. We will get back to you as soon as possible.");
+              }
+        };
 
-function removeFormErrors() {
-    contactForm.find("input,textarea").on("keydown", function () {
-        if ($(this).hasClass("is-invalid")) {
-            $(this).removeClass("is-invalid");
-        }
-    });
-}
 
-function clearForm() {
-    contactForm.find("input,textarea").each(function() {
-        $(this).value("");
-    }
-}
-
-$(".overlay").hover(function(){
-    $(this).animate({opacity:'1'});
-},
-function(){
-    $(this).animate({opacity:'0'})
-})

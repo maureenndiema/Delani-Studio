@@ -5,59 +5,73 @@
 //     $()
 // });
 
-$(document).ready(function(){
-var contactForm= $("contactform")
-$(function(){
-    contactForm.on("submit", function(){
-        e.preventDefault()
-        let formValid = validContactForm();
-        if (formValid){
-            const name = ("input.name").value()
-            alert("Thank you ${name}, your message has been received");
-            clearForm();
-        }
-    }
-);
-});
-$("#design").click(function(){
-    $(".design-hidden").toggle();
-    $(".design-showing").toggle();
-});
+$(document).ready(function () {
+    // var contactForm= $("contactform")
+    // $(function(){
+    //     contactForm.on("submit", function(){
+    //         e.preventDefault()
+    //         let formValid = validContactForm();
+    //         if (formValid){
+    //             const name = ("input.name").value()
+    //             alert("Thank you ${name}, your message has been received");
+    //             clearForm();
+    //         }
+    //     }
+    // );
+    // });
+    $("#design").click(function () {
+        $(".design-hidden").fadeToggle();
+        $(".design-showing").fadetoggle();
+    });
+    $(".design-showing").click(function () {
+        $(".design-hidden").fadeToggle();
+        $(".design-showing").fadetoggle();
+    });
 
-$("#development").click(function(){
-    $(".development-hidden").toggle();
-    $(".development-showing").toggle();
-});
+    $("#development").click(function () {
+        $(".development-hidden").fadeToggle();
+        $(".development-showing").fadeToggle();
+    });
+    $(".development-showing").click(function () {
+        $(".development-hidden").fadeToggle();
+        $(".development-showing").fadeToggle();
+    });
 
-$("#product").click(function(){
-    $(".product-hidden").toggle();
-    $(".product-showing").toggle();
+    $("#product").click(function () {
+        $(".product-hidden").fadeToggle();
+        $(".product-showing").fadeToggle();
 
-});
+    });
+    $(".product-showing").click(function () {
+        $(".product-hidden").fadeToggle();
+        $(".product-showing").fadeToggle();
+
+    });
 });
 // validate contact form
-function validateContactForm(){
+function validateContactForm() {
     let isFormValid = true;
     const formInputs = contactForm.find("input,textarea")
-     
-    formInputs.each(function(){
-        if ($(this).value()){
-            $(this).addClass(is-invalid);
-            isFormValid = false;
-        }
-    }
-    return isFormValid;
-});
 
-function removeFormErrors(){
-    contactForm.find("input,textarea").on("keydown", function(){
-        if ($(this).hasClass("is-invalid")){
+    formInputs.each(function () {
+            if ($(this).value()) {
+                $(this).addClass(is - invalid);
+                isFormValid = false;
+            }
+        }
+        return isFormValid;
+    });
+
+function removeFormErrors() {
+    contactForm.find("input,textarea").on("keydown", function () {
+        if ($(this).hasClass("is-invalid")) {
             $(this).removeClass("is-invalid");
         }
     });
 }
-function clearForm(){
-    contactForm.find("input,textarea").each(function){
+
+function clearForm() {
+    contactForm.find("input,textarea").each(function) {
         $(this).value("");
     }
 }

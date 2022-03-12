@@ -34,15 +34,22 @@
 }
 .services{
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .what-we-do{
     text-align: center;
 }
-#development{
-    text-align: center;
+.design-showing{
+    display: none;
 }
-#product{
+.development-showing{
     text-align: center;
+    display: none;
+}
+.product-showing{
+    text-align: center;
+    display: none;
 }
 .services{
     background-image: url("../assets/backgrounds/s_image.jpg");

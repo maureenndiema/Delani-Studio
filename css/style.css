@@ -1,35 +1,36 @@
-    *{
+    * {
         font-family: 'Poppins', sans-serif;
         padding: 0px;
         margin: 0px;
     }
-.intro {
-    background-image:url("../assets/backgrounds/h_img.jpg") ;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 30px ;
-    height: 50vw;
-    margin: auto;
-    
-   
-    
-}
-#logo{
-    margin-top: 200px;
-    margin-bottom: 45px;
-    height: 60px;
-}
-#mouse.click{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    animation:bounce 1s infinite;
-}
-/* @keyframes bounce{ */
+
+    .intro {
+        background-image: url("../assets/backgrounds/h_img.jpg");
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 30px;
+        height: 50vw;
+        margin: auto;
+    }
+
+    #logo {
+        margin-top: 200px;
+        margin-bottom: 45px;
+        height: 60px;
+    }
+
+    #mouse.click {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        animation: bounce 1s infinite;
+    }
+
+    /* @keyframes bounce{ */
     /* 0%,60%,100%{
         transform:translateY(0);
     }
@@ -41,154 +42,179 @@
 
     }
 } */
-@keyframes bounce {
-    0%, 100% {
-          transform: translateY(0);
-     }
-    100% {
-          transform: translateY(-3.5vw);
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-3.5vw);
+        }
     }
- }
-.intro p{
-    margin-bottom: 5vw;   
-}
-.intro h1{
-    margin-bottom: 20px;
-}
-#about-us{           
-    text-align: center;
-}
-.services{
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-.what-we-do{
-    text-align: center;
-}
-.design-hidden{
-    text-align: center;
-    display: none;
-}
-.development-showing{
-    text-align: center;
-    display: none;
-}
-.product-showing{
-    text-align: center;
-    display: none;
-}
-.services{
-    background-image: url("../assets/backgrounds/s_image.jpg");
-    color: white;
-    padding-top: 2vw;
-    /* margin: 15px;
+
+    .intro p {
+        margin-bottom: 5vw;
+    }
+
+    .intro h1 {
+        margin-bottom: 20px;
+    }
+
+    #about-us {
+        text-align: center;
+    }
+
+    .services {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .what-we-do {
+        text-align: center;
+    }
+
+    .design-hidden {
+        text-align: center;
+        display: none;
+    }
+
+    .development-showing {
+        text-align: center;
+        display: none;
+    }
+
+    .product-showing {
+        text-align: center;
+        display: none;
+    }
+
+    .services {
+        background-image: url("../assets/backgrounds/s_image.jpg");
+        color: white;
+        padding-top: 2vw;
+        /* margin: 15px;
     padding: 15px; */
-}
-#servicesoverlay{
-    padding: 50px;
-    margin: 50px;
-}
+    }
 
-.contact{
-    background-image: url("../assets/backgrounds/c_image.jpg");
-    background-size: cover;
-}
-.form-control{
-    background-color:  rgba(0,0,0,0);
-}
-#name::placeholder{
-    color: white;
-}
-#email::placeholder{
-    color: white;
-}
-#message::placeholder{
-    color: white;
-}
-.submit{
-    color: white;
-    background-color: rgba(0,0,0,0);
-    margin-top: 10px;
-    
-}
-#contact{
-    text-align: center;
-    color: white;
-}
-.footer{
-    position: static;
-    text-align: center;
-    width: 100%;
-}
-#portfolio{
-    display: flex;
-    align-items: center;
-    margin-left: 0%;
-    margin-right: 0%;
-    flex-wrap: wrap;
-}
-.images {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-#overlay p{
-    display: none;
-}
-#overlay,#overlay1{
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-    border: 2px solid white;
-    height: 90%;
-    width: 75%;
-    background-color: grey;
+    #servicesoverlay {
+        padding: 50px;
+        margin: 50px;
+    }
 
-}
-/* #work1,#work2,#work3,#work4,#work5,#work6,#work7,#work8{
+    .contact {
+        background-image: url("../assets/backgrounds/c_image.jpg");
+        background-size: cover;
+    }
+
+    .form-control {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+    #name::placeholder {
+        color: white;
+    }
+
+    #email::placeholder {
+        color: white;
+    }
+
+    #message::placeholder {
+        color: white;
+    }
+
+    .submit {
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 10px;
+    }
+
+    #contact {
+        text-align: center;
+        color: white;
+    }
+
+    .footer {
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    #portfolio {
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        flex-wrap: wrap;
+    }
+
+    .images {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #overlay p {
+        display: none;
+    }
+
+    #overlay,
+    #overlay1 {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        border: 2px solid white;
+        height: 90%;
+        width: 75%;
+        background-color: grey;
+    }
+
+    /* #work1,#work2,#work3,#work4,#work5,#work6,#work7,#work8{
     display: relative;
 } */
-.work1{
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .work1:hover .image {
-    opacity: 0.3;
-  }
-  
-  .work1:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: #04AA6D;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
+    .work1 {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .work1:hover .image {
+        opacity: 0.3;
+    }
+
+    .work1:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
